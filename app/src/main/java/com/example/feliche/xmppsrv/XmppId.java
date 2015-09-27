@@ -37,7 +37,8 @@ public class XmppId extends Fragment implements View.OnClickListener {
         etXmPw = (EditText)v.findViewById(R.id.etXmPw);
         btnConnect = (Button)v.findViewById(R.id.btnXmConnect);
 
-        etXmId.setText("taxi_1@feliche.ddns.net");
+        etXmId.setText("taxi1@feliche.ddns.net");
+        etXmPw.setText("taxi1");
 
         btnConnect.setOnClickListener(this);
 

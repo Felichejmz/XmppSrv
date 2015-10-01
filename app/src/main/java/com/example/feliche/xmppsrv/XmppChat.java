@@ -38,7 +38,7 @@ public class XmppChat extends Fragment implements View.OnClickListener{
         etMensajes = (EditText)v.findViewById(R.id.etChatMensaje);
         btnEnviar = (Button)v.findViewById(R.id.btnChatSend);
 
-        etDestino.setText("admin_taxis@feliche.ddns.net");
+        etDestino.setText("feliche@feliche.ddns.net");
         btnEnviar.setOnClickListener(this);
 
         return v;
@@ -81,7 +81,7 @@ public class XmppChat extends Fragment implements View.OnClickListener{
     @Override
     public void onPause(){
         super.onPause();
-        getActivity().unregisterReceiver(mReceiver);
+        //getActivity().unregisterReceiver(mReceiver);
     }
 
     @Override

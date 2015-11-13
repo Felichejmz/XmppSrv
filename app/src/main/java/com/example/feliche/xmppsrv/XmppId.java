@@ -37,8 +37,8 @@ public class XmppId extends Fragment implements View.OnClickListener {
         etXmPw = (EditText)v.findViewById(R.id.etXmPw);
         btnConnect = (Button)v.findViewById(R.id.btnXmConnect);
 
-        etXmId.setText("taxi1@feliche.ddns.net");
-        etXmPw.setText("taxi1");
+        etXmId.setText("feliche@feliche.xyz");
+        etXmPw.setText("feliche");
 
         btnConnect.setOnClickListener(this);
 
@@ -66,7 +66,7 @@ public class XmppId extends Fragment implements View.OnClickListener {
 
     public void save(){
         if(verifyXmppID(etXmId.getText().toString()) == false){
-            Toast.makeText(getContext(),"Formato invalido",Toast.LENGTH_LONG).show();
+            //Toast.makeText(getContext(),"Formato invalido",Toast.LENGTH_LONG).show();
             return;
         }
 

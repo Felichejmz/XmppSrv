@@ -11,8 +11,8 @@ import android.util.Log;
 import servicio.XmppService;
 
 public class ReceiverXmpp extends BroadcastReceiver {
-
     private String log;
+    /*
     static final String TAG = "smack.BroadcastReceiver";
     private static int networkType = -1;
 
@@ -28,13 +28,14 @@ public class ReceiverXmpp extends BroadcastReceiver {
         }
         Log.d(TAG,"initiNetworkStatus -> " + networkType);
     }
-
+    */
     public ReceiverXmpp() {
         log = "";
     }
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        /*
         Log.d(TAG, "onReceiver " + intent);
 
         if(intent.getAction().equals(Intent.ACTION_SHUTDOWN)){
@@ -42,7 +43,7 @@ public class ReceiverXmpp extends BroadcastReceiver {
             Intent xmppServiceIntent = new Intent(context, XmppService.class);
             context.stopService(xmppServiceIntent);
         }else
-        if (intent.getAction().equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
+        if (intent.getAction().equals(ConnectivityManager.CONNECTIVITY_ACTION)){
             boolean connstartup = PreferenceManager.getDefaultSharedPreferences(context)
                     .getBoolean(PreferenceConstants.CONN_STARTUP, false);
             if (!connstartup) // ignore event, we are not running
@@ -73,5 +74,6 @@ public class ReceiverXmpp extends BroadcastReceiver {
                 return;
             context.startService(xmppServiceIntent);
         }
+        */
     }
 }

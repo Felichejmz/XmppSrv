@@ -23,11 +23,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/etChatTo" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Escribir mensaje"
-        android:id="@+id/tvChatMensaje" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escribir mensaje"
+            android:id="@+id/tvChatMensaje" />
+    </ScrollView>
 
     <EditText
         android:layout_width="match_parent"
@@ -35,7 +42,7 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/etChatMensaje"
-        android:layout_weight="0.20" />
+        android:layout_weight="0.08" />
 
     <Button
         android:layout_width="fill_parent"
